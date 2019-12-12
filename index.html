@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JorinGrant.com</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" type="image/png" href="img/Favicon.png"/>
+</head>    
+<body>
+	
+<section class="intro">  
+	
+		  <div class="content1">
+
+			<div class="logo">
+
+					<img src="img/logo.png" alt="Logo" class="responsive">
+
+				</div>
+
+				<div class="nav">
+
+					<a href="#about">about</a>
+					<a href="#media">media</a>
+					<a href="#projects">projects</a>
+					<a href="contact.html">contact</a>
+
+				</div>
+
+			</div>
+	  
+</section>
+	
+<section class="gradient">
+	
+</section>
+	
+<section id="about">
+	
+			<div class="about-header">
+
+			<h1>Hi, I'm Jorin Grant.</h1>
+
+			</div>
+
+			<div class="ImageMe">
+
+				<img src="img/Me.png" alt="Me" class="responsive">
+
+			</div>
+
+			<div class="about-text">
+
+                <h4>I'm an aspiring web developer studying in Aberdeen, who does photography in my spare time. I've created this website to show off my skills in web development. Check out some of my work and previous projects below.</h4>
+
+			</div>
+	
+</section>
+	
+<section id="media">
+	
+			<div class="slideshow">
+
+			<div class="slideshow-container">
+
+		  <div class="mySlides fade">
+			<img class="images-media" src="img/Image1.jpg" alt="Image2" style="width:100%" border="5">
+		  </div>
+
+		  <div class="mySlides fade">
+			<img class="images-media" src="img/Image2.jpg" alt="Image1" style="width:100%" border="5">
+		  </div>
+
+		  <div class="mySlides fade">
+			<img class="images-media" src="img/Image3.jpg" alt="Image3" style="width:100%" border="5">
+		  </div>
+
+		  <div class="mySlides fade">
+			<img class="images-media" src="img/Image4.jpg" alt="Image3" style="width:100%" border="5;">
+		  </div>
+
+		  <div class="mySlides fade">
+			<img class="images-media" src="img/Image5.jpg" alt="Image3" style="width:100%" border="5">
+		  </div>
+
+		  <div class="mySlides fade">
+			<video class="images-media" width="1000" controls>
+			<source src="img/paris.mp4" type="video/mp4" style="height:1145px">
+			</video>
+		  </div>
+
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span>
+		  <span class="dot" onclick="currentSlide(2)"></span>
+		  <span class="dot" onclick="currentSlide(3)"></span>
+		  <span class="dot" onclick="currentSlide(4)"></span>
+		  <span class="dot" onclick="currentSlide(5)"></span>
+		  <span class="dot" onclick="currentSlide(6)"></span>
+		</div>
+
+		<script>
+
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		}
+
+		</script>
+
+		</div>
+	
+</section>
+	
+<section id="projects">
+	
+		  <div class="text-projects">
+	
+			<h4>Below are some images that are related to my former projects that I've worked on in the past, mostly done in my HND Digital Design and Development course at college.</h4>
+			  
+		  </div>
+	
+		  <div class="images-projects">
+	
+			  <div class="SilverNote"><img src="img/SilverNote.png" alt="SilverNote"><h5>SilverNote is a music label created by Nescol. I created a series of digital media images for their website and created promotional material for their event.</h5></div>
+			  
+              <div class="EXY"><img src="img/EXY.png" alt="EXY"><h5>EXY is a fictional E-Business idea I created for my first year HND class. The idea for the business was to sell smart glasses that would display the time, play music and read notificaitons to the user.</h5></div>
+			  
+              <div class="BTL"><img src="img/BTL.png" alt="Beyond The Lens"><h5>Beyond the Lens was an app idea that I created along with a few of my classmates. It was an app centered around photography, and the idea that you could use AR to collect polaroid images that you would find in different locations and add them to your personal gallery.</h5></div>
+              
+              <div class="Camera"><img src="img/camera.png" alt="Camera"><h5>With photography, I am always going out with my camera to capture moments around Aberdeen, which I tend to use to create mini projects of different styles and ideas.</h5></div>
+			 
+		  </div>	
+	
+</section>
+	
+<section id="contact">
+	
+                <div class="emailbutton">
+    
+                <a href="mailto:me@joringrant.com?Subject=Project%20Plan:" target="_top" style="color: white;">Send Me an Email</a>  
+                    
+                </div>
+    
+				<div class="contactitems"> 
+		
+			  <img src="img/Facebook.png" alt="SilverNote" class="responsive">
+			  
+			  <img src="img/Twitter.png" alt="EXY" class="responsive">
+			  
+			  <img src="img/YouTube.png" alt="YouTube" class="responsive">
+	
+			  <img src="img/Instagram.png" alt="Instagram" class="responsive"> 
+	
+			   </div>
+
+</section>
+    
+<section id="gradient2">
+    
+    <div class="top">
+    
+    <a href="#top" style="color: white;text-decoration: none">Back to Top</a>
+    
+    </div>
+
+</section>
+
+</body>
+	
+</html>
